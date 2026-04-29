@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horizon Visual Agency — Ingénierie de Croissance & Expériences Digitales</title>
+<title>Horizon Visual Agency</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -1039,8 +1039,8 @@ nav ul a:hover{color:var(--blue)}
 /* ============ GUARANTEE (cases statiques) ============ */
 .guarantee{
   padding:140px 0 160px;
-  background:var(--ink);
-  color:var(--cream);
+  background:var(--cream);
+  color:var(--ink);
   position:relative;
   overflow:hidden;
 }
@@ -1049,8 +1049,8 @@ nav ul a:hover{color:var(--blue)}
   position:absolute;
   inset:0;
   background-image:
-    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    linear-gradient(rgba(10,10,10,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,10,10,.025) 1px, transparent 1px);
   background-size:60px 60px;
   pointer-events:none;
   -webkit-mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, #000 30%, transparent 90%);
@@ -1061,7 +1061,7 @@ nav ul a:hover{color:var(--blue)}
   position:absolute;
   top:0;right:0;
   width:600px;height:600px;
-  background:radial-gradient(circle, rgba(61,149,255,.15) 0%, transparent 60%);
+  background:radial-gradient(circle, rgba(61,149,255,.08) 0%, transparent 60%);
   pointer-events:none;
 }
 .guarantee-header{
@@ -1069,9 +1069,9 @@ nav ul a:hover{color:var(--blue)}
   margin-bottom:72px;
 }
 .guarantee .badge{
-  background:rgba(255,255,255,.05);
-  border-color:rgba(255,255,255,.15);
-  color:var(--cream);
+  background:var(--cream-2);
+  border-color:var(--border-dark);
+  color:var(--ink);
 }
 .guarantee h2{max-width:900px;margin:0 auto}
 .guarantee-grid{
@@ -1086,7 +1086,7 @@ nav ul a:hover{color:var(--blue)}
   overflow:hidden;
   transition:transform .3s cubic-bezier(.2,.9,.2,1);
   cursor:default;
-  border-top:1px solid rgba(255,255,255,.1);
+  border-top:1px solid var(--border);
 }
 .guarantee-item:hover{
   transform:translateY(-4px);
@@ -1096,7 +1096,7 @@ nav ul a:hover{color:var(--blue)}
   top:20px;right:20px;
   font-size:56px;
   font-weight:900;
-  color:rgba(255,255,255,.04);
+  color:rgba(10,10,10,.04);
   line-height:1;
   letter-spacing:-.04em;
   pointer-events:none;
@@ -1125,14 +1125,14 @@ nav ul a:hover{color:var(--blue)}
 }
 .guarantee-item p{
   font-size:13px;
-  color:rgba(255,255,255,.45);
+  color:var(--gray);
   line-height:1.6;
 }
 
 /* Testimonial PODBLEND */
 .testimonial{
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(255,255,255,.1);
+  background:var(--cream-2);
+  border:1px solid var(--border);
   border-radius:20px;
   padding:48px 56px;
   display:grid;
@@ -1148,7 +1148,7 @@ nav ul a:hover{color:var(--blue)}
   top:-20px;right:40px;
   font-size:200px;
   font-weight:900;
-  color:rgba(255,255,255,.03);
+  color:rgba(10,10,10,.03);
   line-height:1;
   font-family:Georgia,serif;
   pointer-events:none;
@@ -1157,6 +1157,7 @@ nav ul a:hover{color:var(--blue)}
   width:100px;
   height:100px;
   background:var(--cream);
+  border:1px solid var(--border-dark);
   border-radius:20px;
   display:flex;
   align-items:center;
@@ -1186,31 +1187,32 @@ nav ul a:hover{color:var(--blue)}
   letter-spacing:-.015em;
   margin-bottom:18px;
   max-width:580px;
+  color:var(--ink);
 }
 .testimonial-author{
   font-size:13px;
-  color:var(--gray-light);
+  color:var(--gray);
   display:flex;
   align-items:center;
   gap:10px;
 }
 .testimonial-author strong{
-  color:var(--cream);
+  color:var(--ink);
   font-weight:600;
 }
 .testimonial-author::before{
   content:'';
   width:30px;height:1px;
-  background:var(--gray);
+  background:var(--border-dark);
 }
 .testimonial-arrow{
   width:52px;height:52px;
   border-radius:50%;
-  border:1px solid rgba(255,255,255,.2);
+  border:1px solid var(--border-dark);
   display:flex;
   align-items:center;
   justify-content:center;
-  color:var(--cream);
+  color:var(--ink);
   flex-shrink:0;
   transition:all .3s;
   cursor:pointer;
@@ -1220,7 +1222,8 @@ nav ul a:hover{color:var(--blue)}
 /* ============ METHOD ============ */
 .method{
   padding:140px 0 160px;
-  background:var(--cream);
+  background:var(--ink);
+  color:var(--cream);
   position:relative;
   overflow:hidden;
 }
@@ -1239,10 +1242,15 @@ nav ul a:hover{color:var(--blue)}
   gap:72px;
   align-items:center;
 }
+.method .badge{
+  background:rgba(255,255,255,.05);
+  border-color:rgba(255,255,255,.15);
+  color:var(--cream);
+}
 .method-text h2{margin-bottom:28px}
 .method-text p.intro{
   font-size:17px;
-  color:var(--gray);
+  color:var(--gray-light);
   line-height:1.6;
   max-width:480px;
   margin-bottom:32px;
@@ -1251,7 +1259,7 @@ nav ul a:hover{color:var(--blue)}
   display:flex;
   gap:32px;
   padding-top:32px;
-  border-top:1px solid var(--border);
+  border-top:1px solid rgba(255,255,255,.1);
 }
 .method-text .method-stats div .num{
   font-size:36px;
@@ -1261,15 +1269,15 @@ nav ul a:hover{color:var(--blue)}
 }
 .method-text .method-stats div .label{
   font-size:12px;
-  color:var(--gray);
+  color:var(--gray-light);
   margin-top:6px;
 }
 
 .method-mac{
-  background:var(--ink);
+  background:#151515;
   border-radius:20px;
   padding:14px;
-  box-shadow:0 40px 80px -30px rgba(10,10,10,.4), 0 0 0 1px var(--ink);
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.1);
   position:relative;
 }
 .method-mac::before{
@@ -1899,7 +1907,7 @@ nav .logo:hover .logo-mark,
 
 <div class="preloader" id="preloader">
   <div class="preloader-logo">
-    <div class="preloader-mark"></div>
+    <img src="logo horizon.png" alt="Logo" style="height: 36px; width: auto; border-radius: 8px;">
     <span class="preloader-text" id="preloader-text">Horizon Visual Agency</span>
   </div>
   <div class="preloader-bar"></div>
@@ -1907,16 +1915,16 @@ nav .logo:hover .logo-mark,
 
 <nav class="top">
   <div class="logo">
-    <div class="logo-mark"></div>
+    <img src="logo horizon.png" alt="Horizon Visual Agency" style="height: 28px; width: auto; border-radius: 6px;">
     Horizon Visual Agency
   </div>
   <ul>
     <li><a href="#problem">Pourquoi</a></li>
-    <li><a href="#projects">Études de cas</a></li>
     <li><a href="#guarantee">Garanties</a></li>
     <li><a href="#method">Méthode</a></li>
+    <li><a href="#projects">Études de cas</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">
+  <a href="contact.html" class="nav-cta">
     <span>Réserver un appel</span>
     <span class="nav-arrow">
       <svg width="10" height="10" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1939,7 +1947,7 @@ nav .logo:hover .logo-mark,
       <span class="h1-line"><span class="h1-line-inner"><span class="hl-yellow">pas juste</span> qui décorent.</span></span>
     </h1>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">
+      <a href="contact.html" class="btn-primary">
         <span>Réserver un appel</span>
         <span class="arrow">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -2005,74 +2013,6 @@ nav .logo:hover .logo-mark,
 
 <div class="fade fade-ink-cream"></div>
 
-<section class="projects" id="projects">
-  <div class="container">
-    <div class="projects-header reveal">
-      <span class="badge">Nos réalisations</span>
-      <h2>Deux visions,<br>zéro <span class="hl-blue">template.</span></h2>
-    </div>
-
-    <div class="projects-grid">
-      <article class="project horizon-theme reveal reveal-delay-1">
-        <div class="project-visual">
-          <div class="mockup-bar">
-            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-            <div class="url">horizon-visual-agency.com</div>
-          </div>
-          <div class="horizon-screen">
-          <img src="horizon-hero.png" alt="Horizon Visual Agency" class="horizon-image">
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span>Brand Strategy</span>
-            <span>Landing Immersive</span>
-            <span>2026</span>
-          </div>
-          <h3>Horizon Visual Agency</h3>
-          <p class="project-description">Notre propre écosystème de conversion. Une démonstration technique de notre vision de la performance et de l'expérience utilisateur.</p>
-          <a href="etude-horizon.html" class="project-link">
-            <span>Voir l'étude de cas</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <article class="project podblend-theme reveal reveal-delay-2">
-        <div class="podblend-visual">
-          <div class="mockup-bar">
-            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-            <div class="url">podblend.fr</div>
-          </div>
-        <img src="podblend-hero.png" alt="Capture du site Podblend" class="podblend-image">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span>Plateforme de Marque</span>
-            <span>Infrastructure Cloud</span>
-            <span>2025</span>
-          </div>
-          <h3>Podblend Studio</h3>
-          <p class="project-description">Système de conversion immersif pour un studio de production. Identité visuelle forte, infrastructure haute disponibilité et pilotage stratégique.</p>
-          <a href="etude-podblend.html" class="project-link">
-            <span>Voir l'étude de cas</span>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-      </article>
-    </div>
-
-    <div class="see-more-wrap reveal">
-      <a href="projets.html" class="see-more">
-        <span>Découvrir toutes nos réalisations</span>
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<div class="fade fade-cream-ink"></div>
-
 <section class="guarantee" id="guarantee">
   <div class="container">
     <div class="guarantee-header reveal">
@@ -2110,7 +2050,9 @@ nav .logo:hover .logo-mark,
     </div>
 
     <div class="testimonial reveal">
-      <div class="testimonial-logo">PODBLEND</div>
+      <div class="testimonial-logo">
+        <img src="podblend-logo.webp" alt="Podblend" style="width: 100%; height: auto; filter: invert(1);">
+      </div>
       <div class="testimonial-content">
         <div class="testimonial-stars">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -2129,7 +2071,7 @@ nav .logo:hover .logo-mark,
   </div>
 </section>
 
-<div class="fade fade-ink-cream"></div>
+<div class="fade fade-cream-ink"></div>
 
 <section class="method" id="method">
   <div class="container">
@@ -2238,6 +2180,74 @@ nav .logo:hover .logo-mark,
   </div>
 </section>
 
+<div class="fade fade-ink-cream"></div>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="projects-header reveal">
+      <span class="badge">Nos réalisations</span>
+      <h2>Deux visions,<br>zéro <span class="hl-blue">template.</span></h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project horizon-theme reveal reveal-delay-1">
+        <div class="project-visual">
+          <div class="mockup-bar">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="url">horizon-visual-agency.com</div>
+          </div>
+          <div class="horizon-screen">
+          <img src="horizon-hero.png" alt="Horizon Visual Agency" class="horizon-image">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Brand Strategy</span>
+            <span>Landing Immersive</span>
+            <span>2026</span>
+          </div>
+          <h3>Horizon Visual Agency</h3>
+          <p class="project-description">Notre propre écosystème de conversion. Une démonstration technique de notre vision de la performance et de l'expérience utilisateur.</p>
+          <a href="etude-horizon.html" class="project-link">
+            <span>Voir l'étude de cas</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project podblend-theme reveal reveal-delay-2">
+        <div class="podblend-visual">
+          <div class="mockup-bar">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="url">podblend.fr</div>
+          </div>
+        <img src="podblend-hero.png" alt="Capture du site Podblend" class="podblend-image">
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Plateforme de Marque</span>
+            <span>Infrastructure Cloud</span>
+            <span>2025</span>
+          </div>
+          <h3>Podblend Studio</h3>
+          <p class="project-description">Système de conversion immersif pour un studio de production. Identité visuelle forte, infrastructure haute disponibilité et pilotage stratégique.</p>
+          <a href="etude-podblend.html" class="project-link">
+            <span>Voir l'étude de cas</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="see-more-wrap reveal">
+      <a href="projets.html" class="see-more">
+        <span>Découvrir toutes nos réalisations</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <div class="fade fade-cream-ink"></div>
 
 <section class="cta" id="contact">
@@ -2245,7 +2255,7 @@ nav .logo:hover .logo-mark,
     <span class="badge">Identifier vos leviers de croissance</span>
     <h2>Définissons votre<br>nouvelle <span class="hl-blue">trajectoire.</span></h2>
     <p>Un diagnostic stratégique de 30 minutes pour identifier vos besoins et valider votre potentiel de conversion digitale.</p>
-    <a href="mailto:hello@horizon-visual-agency.com" class="cta-btn">
+    <a href="contact.html" class="cta-btn">
       Réserver votre diagnostic
       <span class="arrow">
         <svg width="16" height="16" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -2261,12 +2271,12 @@ nav .logo:hover .logo-mark,
     <div class="footer-hero">
       <div class="footer-left">
         <div class="logo">
-          <div class="logo-mark"></div>
+          <img src="logo horizon.png" alt="Horizon Visual Agency" style="height: 48px; width: auto; border-radius: 10px;">
           Horizon Visual Agency
         </div>
         <p>Cabinet d'ingénierie digitale spécialisé dans la création d'expériences haute performance et l'optimisation des conversions. Basé à Paris, disponible pour vos projets internationaux.</p>
-        <a href="mailto:hello@horizon-visual-agency.com" class="footer-email-btn">
-          <span>hello@horizon-visual-agency.com</span>
+        <a href="mailto:contact@horizon-visual-agency.com" class="footer-email-btn">
+          <span>contact@horizon-visual-agency.com</span>
           <span class="arrow-box">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
@@ -2304,7 +2314,7 @@ nav .logo:hover .logo-mark,
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="dyn-year">2026</span> Horizon Visual Agency — <a href="#" style="color:inherit;opacity:.55;text-decoration:underline;text-underline-offset:3px">Mentions légales</a> · <a href="#" style="color:inherit;opacity:.55;text-decoration:underline;text-underline-offset:3px">CGV</a> · <a href="#" style="color:inherit;opacity:.55;text-decoration:underline;text-underline-offset:3px">Confidentialité</a></span>
+      <span>© <span id="dyn-year">2026</span> Horizon Visual Agency — <a href="mentions-legales.html" style="color:inherit;opacity:.55;text-decoration:underline;text-underline-offset:3px">Mentions légales</a> · <a href="cgv.html" style="color:inherit;opacity:.55;text-decoration:underline;text-underline-offset:3px">CGV</a> · <a href="confidentialite.html" style="color:inherit;opacity:.55;text-decoration:underline;text-underline-offset:3px">Confidentialité</a></span>
       <span class="status">Trajectoire <span id="dyn-quarter-footer">Q1 2026</span></span>
     </div>
   </div>
